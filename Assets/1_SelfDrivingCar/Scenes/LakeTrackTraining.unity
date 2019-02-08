@@ -1760,15 +1760,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400064, guid: 0fb4610dba67fc24cb2a6674fb155fc1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 123.37
+      value: 135
       objectReference: {fileID: 0}
     - target: {fileID: 400064, guid: 0fb4610dba67fc24cb2a6674fb155fc1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.43
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400064, guid: 0fb4610dba67fc24cb2a6674fb155fc1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 151.4
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 400064, guid: 0fb4610dba67fc24cb2a6674fb155fc1, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1817,12 +1817,17 @@ PrefabInstance:
     - target: {fileID: 114757350270972052, guid: 0fb4610dba67fc24cb2a6674fb155fc1,
         type: 3}
       propertyPath: SupersampleScale
-      value: 8
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114757350270972052, guid: 0fb4610dba67fc24cb2a6674fb155fc1,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114757350270972052, guid: 0fb4610dba67fc24cb2a6674fb155fc1,
+        type: 3}
+      propertyPath: MinimalVerticalFOV
+      value: -25
       objectReference: {fileID: 0}
     - target: {fileID: 1434489552363722, guid: 0fb4610dba67fc24cb2a6674fb155fc1, type: 3}
       propertyPath: m_IsActive
@@ -1880,12 +1885,67 @@ PrefabInstance:
     - target: {fileID: 20944797426015980, guid: 0fb4610dba67fc24cb2a6674fb155fc1,
         type: 3}
       propertyPath: field of view
-      value: 90
+      value: 54.043163
       objectReference: {fileID: 0}
     - target: {fileID: 20944797426015980, guid: 0fb4610dba67fc24cb2a6674fb155fc1,
         type: 3}
       propertyPath: m_HDR
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 20944797426015980, guid: 0fb4610dba67fc24cb2a6674fb155fc1,
+        type: 3}
+      propertyPath: m_Depth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 20944797426015980, guid: 0fb4610dba67fc24cb2a6674fb155fc1,
+        type: 3}
+      propertyPath: near clip plane
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 20944797426015980, guid: 0fb4610dba67fc24cb2a6674fb155fc1,
+        type: 3}
+      propertyPath: m_projectionMatrixMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 20944797426015980, guid: 0fb4610dba67fc24cb2a6674fb155fc1,
+        type: 3}
+      propertyPath: m_SensorSize.x
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 20944797426015980, guid: 0fb4610dba67fc24cb2a6674fb155fc1,
+        type: 3}
+      propertyPath: m_SensorSize.y
+      value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 20944797426015980, guid: 0fb4610dba67fc24cb2a6674fb155fc1,
+        type: 3}
+      propertyPath: m_RenderingPath
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 20944797426015980, guid: 0fb4610dba67fc24cb2a6674fb155fc1,
+        type: 3}
+      propertyPath: m_OcclusionCulling
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20944797426015980, guid: 0fb4610dba67fc24cb2a6674fb155fc1,
+        type: 3}
+      propertyPath: m_AllowMSAA
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20944797426015980, guid: 0fb4610dba67fc24cb2a6674fb155fc1,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.19215688
+      objectReference: {fileID: 0}
+    - target: {fileID: 20944797426015980, guid: 0fb4610dba67fc24cb2a6674fb155fc1,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.4745098
+      objectReference: {fileID: 0}
+    - target: {fileID: 20944797426015980, guid: 0fb4610dba67fc24cb2a6674fb155fc1,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.20992559
       objectReference: {fileID: 0}
     - target: {fileID: 114745792511247882, guid: 0fb4610dba67fc24cb2a6674fb155fc1,
         type: 3}
@@ -1902,12 +1962,63 @@ PrefabInstance:
       propertyPath: SupersampleScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114745792511247882, guid: 0fb4610dba67fc24cb2a6674fb155fc1,
+        type: 3}
+      propertyPath: material
+      value: 
+      objectReference: {fileID: 2100000, guid: ffdffb5e1bd30564e9d909c281227028, type: 2}
+    - target: {fileID: 20000010189154420, guid: 0fb4610dba67fc24cb2a6674fb155fc1,
+        type: 3}
+      propertyPath: m_TargetDisplay
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 92000013849855316, guid: 0fb4610dba67fc24cb2a6674fb155fc1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1422036288321996, guid: 0fb4610dba67fc24cb2a6674fb155fc1, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fb4610dba67fc24cb2a6674fb155fc1, type: 3}
+--- !u!1 &252181946 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000011508141430, guid: 0fb4610dba67fc24cb2a6674fb155fc1,
+    type: 3}
+  m_PrefabInstance: {fileID: 252181945}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &252181947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252181946}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd70d448b18cfbc46af26466f752332c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  visualizeFocus: 1
+  focalLength: 10
+  focalSize: 0.05
+  aperture: 0.5
+  focalTransform: {fileID: 0}
+  maxBlurSize: 2
+  highResolution: 0
+  blurType: 0
+  blurSampleCount: 2
+  nearBlur: 0
+  foregroundOverlap: 1
+  dofHdrShader: {fileID: 4800000, guid: acd613035ff3e455e8abf23fdc8c8c24, type: 3}
+  dx11BokehShader: {fileID: 4800000, guid: d8e82664aa8686642a424c88ab10164a, type: 3}
+  dx11BokehThreshold: 0.5
+  dx11SpawnHeuristic: 0.0875
+  dx11BokehTexture: {fileID: 2800000, guid: a4cdca73d61814d33ac1587f6c163bca, type: 3}
+  dx11BokehScale: 1.2
+  dx11BokehIntensity: 2.5
 --- !u!1001 &268727389
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12911,7 +13022,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1677033813}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a9b38ffe999d45eb8670c704853d686, type: 3}
   m_Name: 
