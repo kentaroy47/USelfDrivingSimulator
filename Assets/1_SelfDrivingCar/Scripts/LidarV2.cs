@@ -8,20 +8,22 @@ public class LidarV2 : MonoBehaviour
 	public Camera DepthCamera;
 	public LidarV2DepthCamera LidarV2DepthCameraObject;
 
-	public float RotateFrequency = 20;
+	public float RotateFrequency = 1;
 
-
+    // Frame = Sample Freq/RotateFreq.
 	public float SampleFrequency = 20000;
+
 
 	public int Channels = 64;
 	public float MaximalVerticalFOV = +0.2f;
 	public float MinimalVerticalFOV = -24.9f;
 
-
+    //unused value of Lidar parameter
 	public float MeasurementRange = 120f;
 	public float MeasurementAccuracy = 0.02f;
 
-	public int SupersampleScale = 2;
+    // amount of frame sampling
+	public float SupersampleScale = 50;
 
 	int CloudWidth;
 
@@ -62,12 +64,12 @@ public class LidarV2 : MonoBehaviour
 		currCamTheta = Mathf.Rad2Deg * Mathf.Atan((Mathf.Tan(Mathf.Deg2Rad * DepthCamera.fieldOfView / 2) / Mathf.Sqrt(2f)));
 		maxCamRenderWidth = Mathf.FloorToInt((DepthCamera.fieldOfView / 360) * CloudWidth);
 		maxCamRenderHeight = Mathf.RoundToInt(2 * currCamTheta * Channels / (MaximalVerticalFOV - MinimalVerticalFOV));
-		DepthCamera.targetTexture = new RenderTexture(SupersampleScale * maxCamRenderWidth, SupersampleScale * maxCamRenderHeight, 24);
+		DepthCamera.targetTexture = new RenderTexture((int)SupersampleScale * maxCamRenderWidth, (int)SupersampleScale * maxCamRenderHeight, 24);
 		DepthCamera.targetTexture.Create();
 		DepthCamera.aspect = 1;
 
 		LidarV2DepthCameraObject.Fov = DepthCamera.fieldOfView;
-		LidarV2DepthCameraObject.SupersampleScale = SupersampleScale;
+		LidarV2DepthCameraObject.SupersampleScale = (int)SupersampleScale;
 	}
 
 	void Update()
