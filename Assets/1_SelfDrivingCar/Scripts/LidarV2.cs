@@ -52,6 +52,7 @@ public class LidarV2 : MonoBehaviour
 	float currCamTheta;
 	int maxCamRenderWidth;
 	int maxCamRenderHeight;
+    int a;
 
 	public bool TryRenderPointCloud(out byte[] image)
 	{
@@ -137,7 +138,9 @@ public class LidarV2 : MonoBehaviour
 		// copy texture from "readRenderTex" to related area in "targetImage"
 		int srcX = (maxCamRenderWidth - renderWidth) / 2;
 		int srcY = Mathf.RoundToInt(maxCamRenderHeight * (MinimalVerticalFOV + currCamTheta) / (currCamTheta + currCamTheta));
-		Graphics.CopyTexture(readRenderTex, 0, 0, srcX, srcY, renderWidth, Channels, targetImage, 0, 0, imgHorizontalPixelStart, 0);
+        if (srcY < 0) srcY=0;
+
+        Graphics.CopyTexture(readRenderTex, 0, 0, srcX, srcY, renderWidth, Channels, targetImage, 0, 0, imgHorizontalPixelStart, 0);
 
 		sampleCount -= renderWidth;
 		imgHorizontalPixelStart += renderWidth;
