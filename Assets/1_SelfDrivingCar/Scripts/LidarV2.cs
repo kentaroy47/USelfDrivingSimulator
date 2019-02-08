@@ -120,6 +120,7 @@ public class LidarV2 : MonoBehaviour
 
 
 	void ExecuteRender(ref Texture2D targetImage,int renderWidth, ref int imgHorizontalPixelStart, ref int sampleCount) {
+        // 水平FoVを決定。minが開始、maxがスキャン終了角度。
         minHorizontalFov = 180 - (int)(HorizontalFoV / 2);
         maxHorizontalFov = 180 + (int)(HorizontalFoV / 2);
 
